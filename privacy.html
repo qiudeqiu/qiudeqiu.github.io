@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>隐私政策 — Drawnix for macOS</title>
+    <meta
+      name="description"
+      content="Drawnix for macOS 如何访问、存储和保护您的数据，包括 Google Drive 授权与 Google API 用户数据的有限使用声明。"
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #1b1b1f;
+        --muted: #5d6168;
+        --line: #e3e5e8;
+        --accent: #2f6feb;
+        --card: #f7f8fa;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #14161a;
+          --fg: #e8eaed;
+          --muted: #9aa0a6;
+          --line: #2a2d33;
+          --accent: #7aa7ff;
+          --card: #1b1e23;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 56px 24px 72px;
+      }
+      header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--line);
+      }
+      .brand {
+        font-size: 20px;
+        font-weight: 650;
+        letter-spacing: -0.01em;
+      }
+      nav a {
+        margin-left: 18px;
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 14px;
+      }
+      nav a:hover,
+      footer a:hover {
+        color: var(--accent);
+      }
+      h1 {
+        margin: 40px 0 6px;
+        font-size: 34px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+      }
+      .date {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0 0 28px;
+      }
+      h2 {
+        margin: 36px 0 8px;
+        font-size: 19px;
+        letter-spacing: -0.01em;
+      }
+      p,
+      li {
+        margin: 10px 0;
+      }
+      ul {
+        padding-left: 22px;
+      }
+      code {
+        font-size: 14px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        padding: 1px 5px;
+      }
+      .note {
+        margin: 20px 0;
+        padding: 14px 16px;
+        border-left: 3px solid var(--accent);
+        background: var(--card);
+        border-radius: 0 8px 8px 0;
+        font-size: 15px;
+      }
+      .en {
+        margin-top: 48px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 15px;
+      }
+      .en h2 {
+        color: var(--fg);
+        font-size: 17px;
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        font-size: 14px;
+        color: var(--muted);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        justify-content: space-between;
+      }
+      footer a {
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand"><a href="./index.html" style="color: inherit; text-decoration: none">Drawnix for macOS</a></div>
+        <nav>
+          <a href="./index.html">首页</a>
+          <a href="./terms.html">服务条款</a>
+          <a href="mailto:qiudeqiu@gmail.com">联系</a>
+        </nav>
+      </header>
+
+      <h1>隐私政策</h1>
+      <p class="date">生效日期：2026 年 11 月 22 日</p>
+
+      <p>
+        Drawnix for macOS（下称“本应用”）是一个运行在您 Mac 上的桌面应用。本政策说明本应用会接触哪些数据、
+        这些数据存在哪里，以及您可以如何删除它们。一句话概括：<strong>本应用没有服务器，也不收集您的数据。</strong>
+      </p>
+
+      <h2>1. 本应用不收集的数据</h2>
+      <ul>
+        <li>没有账号系统，不要求您注册，也没有任何埋点、统计或崩溃上报。</li>
+        <li>不收集设备标识、位置、通讯录、剪贴板历史或使用行为。</li>
+        <li>画布内容不会被上传到本应用开发者控制的任何服务器——本应用没有这样的服务器。</li>
+      </ul>
+
+      <h2>2. 画布数据存在哪里</h2>
+      <ul>
+        <li><strong>本机默认存储</strong>：自动保存的画布写入您 Mac 上本应用的本地存储目录。</li>
+        <li><strong>本机文件</strong>：您通过“打开/保存”选择的文件，只会写入您选定的路径。</li>
+        <li>
+          <strong>Google Drive</strong>：仅当您主动登录并保存到 Drive 时，画布文件才会通过 Google 官方 API
+          写入<strong>您自己账号</strong>下的 Google Drive（默认位于 “Drawnix” 文件夹）。
+        </li>
+      </ul>
+
+      <h2>3. Google 用户数据的使用（有限使用声明）</h2>
+      <p>
+        登录 Google Drive 时，本应用申请的唯一权限是
+        <code>https://www.googleapis.com/auth/drive</code>。该权限仅用于：
+      </p>
+      <ul>
+        <li>在您的 Drive 中创建、读取、更新 Drawnix 画布文件（.drawnix）；</li>
+        <li>列出您 Drive 中与 Drawnix 相关的文件，以便您在应用内打开；</li>
+        <li>读取您主动打开的、或他人共享给您的画布文件；</li>
+        <li>当您使用“共享”功能时，按您的指示为指定 Google 账号设置文件权限。</li>
+      </ul>
+      <p>
+        本应用对从 Google API 获得的信息的使用遵守
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服务用户数据政策</a>，
+        包括其中的有限使用（Limited Use）要求：本应用不会将 Google 用户数据用于广告，不会出售，
+        不会用于训练通用模型，也不会在未获得您明确同意的情况下转移给第三方。
+      </p>
+
+      <h2>4. 登录凭据</h2>
+      <p>
+        Google 授权返回的访问令牌与刷新令牌只保存在 macOS 钥匙串（Keychain）中，用于后续自动续期；
+        它们不会写入应用配置文件、偏好设置或任何日志，也不会离开您的设备。
+        您可以在应用内「文件 ▸ Google Drive 同步… ▸ 退出登录」删除这些凭据。
+      </p>
+
+      <h2>5. 第三方共享</h2>
+      <p>
+        除以下两种情况外，本应用不与任何第三方共享数据：（a）您主动使用“共享”功能，把某个画布授权给您指定的
+        Google 账号，实际权限由 Google Drive 执行；（b）您主动点击的链接会让系统浏览器打开对应网站。
+        本应用不嵌入广告、不嵌入第三方分析 SDK。
+      </p>
+
+      <h2>6. 数据保留与删除</h2>
+      <ul>
+        <li>
+          <strong>本机数据</strong>：删除本应用或清理其本地存储目录即可移除；卸载不会影响您 Drive 里的文件。
+        </li>
+        <li><strong>Google Drive 文件</strong>：由您自己的 Google 账号持有，可在 Drive 中随时删除。</li>
+        <li>
+          <strong>授权本身</strong>：在应用内退出登录，或前往
+          <a href="https://myaccount.google.com/permissions">Google 账号的第三方应用页</a> 移除本应用。
+        </li>
+      </ul>
+
+      <h2>7. 儿童</h2>
+      <p>本应用不是面向 13 岁以下儿童设计的产品，也不会主动收集儿童的个人信息。</p>
+
+      <h2>8. 政策变更</h2>
+      <p>若本政策发生实质性变化，会更新本页顶部的生效日期并在本页公布。</p>
+
+      <h2>9. 联系方式</h2>
+      <p>
+        与隐私相关的问题或数据删除请求，请联系
+        <a href="mailto:qiudeqiu@gmail.com">qiudeqiu@gmail.com</a>。
+      </p>
+
+      <div class="en">
+        <h2>English summary</h2>
+        <p>
+          Drawnix for macOS is a local-first desktop app with no backend of its own. It does not collect
+          analytics, telemetry, or personal data. Canvas files stay on your Mac unless you explicitly sign in
+          and save them to your own Google Drive. When you do, the app requests a single scope
+          (<code>auth/drive</code>) and uses it only to create, read, update, and share Drawnix canvas files in
+          your Drive, in accordance with the
+          <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User
+          Data Policy</a>, including its Limited Use requirements. OAuth tokens are stored only in the macOS
+          Keychain. You can revoke access at
+          <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Questions:
+          <a href="mailto:qiudeqiu@gmail.com">qiudeqiu@gmail.com</a>.
+        </p>
+      </div>
+
+      <footer>
+        <span>© 2026 Drawnix for macOS</span>
+        <span>
+          <a href="./index.html">首页</a> ·
+          <a href="./terms.html">服务条款</a> ·
+          <a href="mailto:qiudeqiu@gmail.com">qiudeqiu@gmail.com</a>
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
